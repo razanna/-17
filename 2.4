@@ -1,0 +1,17 @@
+start
+new pi number
+new i number
+new sign number
+set pi 0
+set i 0
+set sign 1
+loop while_or_for (i < 10000)
+    set pi pi + sign * (4 / (2 * i + 1))
+    set sign sign * -1
+    set i i + 1
+end while_or_for
+log string pi
+delete pi
+delete i
+delete sign
+finish
