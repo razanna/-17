@@ -1,0 +1,15 @@
+start
+new i number
+new j number
+set i 1
+loop while_or_for (i <= 9)
+    set j 1
+    loop while_or_for (j <= 9)
+        log string (i * j)
+        set j j + 1
+    end while_or_for
+    set i i + 1
+end while_or_for
+delete i
+delete j
+finish
